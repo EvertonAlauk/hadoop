@@ -15,11 +15,11 @@
 ```
 
 ``` shell
-docker build -t hadoop -f Dockerfile .
+make build-hadoop
 ```
 
 ``` shell
-docker run -it --name hadoop --rm -p 50070:50070 -p 8088:8088 hadoop:latest
+make start-hadoop
 ```
 
 After that, open in browser:
